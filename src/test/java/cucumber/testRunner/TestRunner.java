@@ -1,6 +1,6 @@
 package cucumber.testRunner;
 
-import org.testng.annotations.DataProvider;
+//import org.testng.annotations.DataProvider;
 //import org.junit.runner.RunWith;
 import org.testng.annotations.Test;
 
@@ -19,7 +19,8 @@ import io.cucumber.testng.CucumberOptions;
 		glue = {"cucumber"},
 		monochrome=true,
 		
-		plugin= {"pretty","html:cucumberreport/index.html","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+		plugin= {"pretty","html:cucumberreport/index.html","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+				 },
 		  tags = "@sanity or @regression"
 		  )
 public class TestRunner extends AbstractTestNGCucumberTests {
